@@ -1,0 +1,42 @@
+.out-container { 
+  background-color: #aaa;
+  border: 3px #000 dashed;
+  margin: auto;
+  padding: 5px;
+  width: 90%;
+  min-height: 100px;
+  height: auto;
+  overflow:hidden
+}
+
+.inside-container {
+  float: left;
+  height: 100px;
+  background-color: #fff;
+  padding: 10px;
+  margin: 5px;
+}
+
+.half-container {
+  width: 48%;
+}
+
+.one-for-third-container {
+  width: 23%;
+}
+
+.two-for-third-container {
+  width: 73%;
+}
+
+.child {
+  background-color: #ccc;
+}
+
+.handle {
+  padding: 0 5px;
+  margin-right: 5px;
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: move;
+}
+

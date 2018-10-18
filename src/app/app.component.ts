@@ -1,0 +1,23 @@
+import { Component } from '@angular/core';
+import { DragulaService } from 'ng2-dragula';
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  title = 'app';
+  constructor(
+    private dragulaService: DragulaService
+  ) {
+    dragulaService.setOptions('first-bag', {
+      moves: function (el, container, handle) {
+        console.log(el, handle, container);
+        return handle.className === 'handle';
+      },
+      // invalid: function (el, handle) {
+      //   return el.tagName === 'SPAN';
+      // }
+    });
+  }
+}
